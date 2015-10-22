@@ -13,7 +13,7 @@ public class HomePage {
     @FindBy(xpath = "//button[@aria-label='Switch account context']/span")
     private WebElement linkLoggedInUser;
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public HomePage(WebDriver driver) {
         this.driver = driver;

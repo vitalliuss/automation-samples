@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SimpleTest {
 
-    public static final String USERNAME = "testautomationuser";
+    private static final String USERNAME = "testautomationuser";
 
     @Test
     public void testOneCanLoginGithub(){

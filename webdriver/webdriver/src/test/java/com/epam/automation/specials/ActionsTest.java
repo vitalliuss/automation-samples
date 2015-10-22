@@ -41,7 +41,7 @@ public class ActionsTest {
 
     }
 
-    public void highlightElement(WebDriver driver, WebElement element)
+    private void highlightElement(WebDriver driver, WebElement element)
     {
         String bg = element.getCssValue("backgroundColor");
         JavascriptExecutor js = ((JavascriptExecutor) driver);

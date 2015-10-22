@@ -12,6 +12,7 @@ import java.net.URL;
 
 /**
  * Created by Vitali_Shulha on 22-Oct-15.
+ * @see "https://github.com/SeleniumHQ/selenium/wiki/Grid2"
  */
 public class RemoteWebDriverTest {
 

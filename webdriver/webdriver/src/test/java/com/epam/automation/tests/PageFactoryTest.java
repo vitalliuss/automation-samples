@@ -1,9 +1,8 @@
 package com.epam.automation.tests;
 
-
-import com.epam.automation.classical.StartPage;
-import com.epam.automation.classical.SignInPage;
-import com.epam.automation.classical.HomePage;
+import com.epam.automation.pages.HomePage;
+import com.epam.automation.pages.SignInPage;
+import com.epam.automation.pages.StartPage;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Vitali_Shulha on 22-Oct-15.
  */
-public class PageObjectTest {
+public class PageFactoryTest {
 
     private final String USERNAME = "testautomationuser";
     private final String PASSWORD = "Time4Death!";
@@ -31,5 +30,4 @@ public class PageObjectTest {
         Assert.assertEquals(USERNAME, loggedInUserName);
         driver.quit();
     }
-
 }
