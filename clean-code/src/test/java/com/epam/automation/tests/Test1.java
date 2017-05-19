@@ -1,6 +1,6 @@
 package com.epam.automation.tests;
 
-import com.epam.automation.pages.HomePage;
+import com.epam.automation.model.HomePage;
 import com.epam.automation.pages.SignInPage;
 import com.epam.automation.pages.StartPage;
 import org.junit.Assert;

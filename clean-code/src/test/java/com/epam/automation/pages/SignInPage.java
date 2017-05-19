@@ -1,5 +1,6 @@
 package com.epam.automation.pages;
 
+import com.epam.automation.model.HomePage;
 import com.epam.automation.model.User;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -46,6 +47,10 @@ public class SignInPage {
         else {
             throw new Exception();
         }
+    }
+
+    public void open() {
+        mDriver.get(GITHUB_BASE_URL);
     }
 
     public HomePage signIn(User user){

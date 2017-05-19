@@ -1,4 +1,4 @@
-package com.epam.automation.pages;
+package com.epam.automation.model;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,6 +23,10 @@ public class HomePage {
     public HomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+    }
+
+    public void open() {
+        driver.get(GITHUB_BASE_URL);
     }
 
     public String getLoggedInUserName() {
