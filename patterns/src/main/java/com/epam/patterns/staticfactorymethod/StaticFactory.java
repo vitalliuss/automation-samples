@@ -9,7 +9,7 @@ public class StaticFactory {
         User user = new User();
         user.setFirstName("Vitali");
         user.setLastName("Shulha");
-        user.setAge(25);
+        user.setAge(27);
         return user;
     }
 
@@ -27,7 +27,7 @@ public class StaticFactory {
 
     public static User createUserFromBirthDate(int year) {
         User user = new User();
-        user.setAge(2015 - year);
+        user.setAge(2017 - year);
         return user;
     }
 }

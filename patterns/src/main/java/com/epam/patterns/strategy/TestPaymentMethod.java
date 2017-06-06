@@ -9,13 +9,6 @@ public class TestPaymentMethod {
 
 	private PaymentContext paymentContext = new PaymentContext();
 
-	public static final String TEXT_TO_CHECK = "Your payment was successfully completed!";
-
-	@BeforeMethod
-	public void before() {
-		WebDriverInstance.getInstance().navigate().to("http://evbyminsd4275/shop/");				
-	}
-
 	@Test
 	public void testPayWithVisa() {
 		assertPay(new VisaPayment("Vitali Shulha", "4589-5432-4567-6545", "10/12/2015", "345"));
@@ -34,7 +27,5 @@ public class TestPaymentMethod {
 	private void assertPay(PaymentStrategy paymentStrategy) {
 		paymentContext.setPaymentStrategy(paymentStrategy);
 		paymentContext.pay();
-		Assert.assertFalse(WebDriverInstance.getInstance()
-				.findElements(By.xpath(String.format("//*[text()='%s']", TEXT_TO_CHECK))).isEmpty());
 	}
 }

@@ -10,7 +10,6 @@ public class GithubTest {
 
     @Test
     public void testGithub(){
-
         WebDriverCreator creator = new ChromeDriverCreator();
         WebDriver driver = creator.factoryMethod();
         driver.navigate().to("http://www.github.com/");

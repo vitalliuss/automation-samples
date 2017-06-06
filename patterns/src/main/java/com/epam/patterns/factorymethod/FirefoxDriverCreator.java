@@ -15,9 +15,8 @@ public class FirefoxDriverCreator extends WebDriverCreator {
 
     @Override
     public WebDriver factoryMethod() {
-        FirefoxBinary binary = new FirefoxBinary(new File("c:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe"));
-        FirefoxProfile profile = new FirefoxProfile();
-        WebDriver driver = new FirefoxDriver(binary, profile);
+        System.setProperty("webdriver.gecko.driver", ".//src/main/resources/geckodriver.exe");
+        WebDriver driver = new FirefoxDriver();
         return driver;
     }
 }

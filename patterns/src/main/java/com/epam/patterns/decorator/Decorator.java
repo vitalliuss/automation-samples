@@ -18,7 +18,6 @@ public class Decorator implements WebDriver {
         this.driver = driver;
     }
 
-
     public void get(String url) {
         driver.get(url);
     }

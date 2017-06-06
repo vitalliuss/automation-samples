@@ -16,7 +16,7 @@ public class CompositeExample {
 		supervisorBob.addSubordinate(worker2); // Jimmy works for Bob
 
 		// Jerry shows his happiness and asks everyone else to do the same		
-		supervisorJerry.showHappiness();
+		supervisorBob.showHappiness();
 
 	}
 

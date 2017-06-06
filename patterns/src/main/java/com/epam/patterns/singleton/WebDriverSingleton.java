@@ -14,14 +14,16 @@ public class WebDriverSingleton {
 
     public static WebDriver getWebDriverInstance() {
         if (null == driver) {
+            System.setProperty("webdriver.gecko.driver", ".//src/main/resources/geckodriver.exe");
             driver = new FirefoxDriver();
         }
         return driver;
     }
 
     public static void closeWebBrowser(){
-        driver.quit();
+        if (null != driver){
+            driver.quit();
+        }
         driver = null;
     }
-
 }
