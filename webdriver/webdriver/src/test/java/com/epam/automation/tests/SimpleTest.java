@@ -12,6 +12,7 @@ public class SimpleTest {
 
     @Test
     public void testOneCanLoginGithub(){
+        System.setProperty("webdriver.gecko.driver", ".//src/test/resources/geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.get("http://www.github.com/");
         driver.findElement(By.xpath("//a[text()='Sign in']")).click();

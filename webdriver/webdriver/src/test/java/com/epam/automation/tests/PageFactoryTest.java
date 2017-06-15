@@ -20,6 +20,7 @@ public class PageFactoryTest {
 
     @Test
     public void testOneCanLoginGithub(){
+        System.setProperty("webdriver.gecko.driver", ".//src/test/resources/geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         StartPage startPage = new StartPage(driver);

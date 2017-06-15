@@ -1,6 +1,5 @@
 package com.epam.automation.specials;
 
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -8,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
@@ -21,6 +21,7 @@ public class ActionsTest {
     @Test
     public void oneCanDragAndDrop()
     {
+        System.setProperty("webdriver.gecko.driver", ".//src/test/resources/geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
