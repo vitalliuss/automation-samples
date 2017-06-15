@@ -1,8 +1,8 @@
 package com.epam.automation;
 
 import org.apache.logging.log4j.Logger;
-import org.junit.Test;
 import org.apache.logging.log4j.LogManager;
+import org.testng.annotations.Test;
 
 public class AppTest {
 
