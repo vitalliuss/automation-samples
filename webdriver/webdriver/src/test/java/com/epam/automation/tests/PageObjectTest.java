@@ -4,10 +4,10 @@ package com.epam.automation.tests;
 import com.epam.automation.classical.StartPage;
 import com.epam.automation.classical.SignInPage;
 import com.epam.automation.classical.HomePage;
-import org.junit.Assert;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 

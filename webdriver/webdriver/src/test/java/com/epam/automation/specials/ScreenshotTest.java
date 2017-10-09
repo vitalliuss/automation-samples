@@ -29,7 +29,7 @@ public class ScreenshotTest {
         driver.findElement(By.xpath("//WRONG_LOCATOR']")).click();
         String loggedInUserName = driver.findElement(By.xpath("//button[@aria-label='Switch account context']/span")).getText();
         System.out.println(loggedInUserName);
-        org.junit.Assert.assertEquals(USERNAME, loggedInUserName);
+        Assert.assertEquals(USERNAME, loggedInUserName);
         DriverSingletone.closeWebBrowser();
     }
 }
